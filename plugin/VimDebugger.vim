@@ -38,7 +38,6 @@ function s:VimDebuggerLoad()
   endif
 endfunction
 
-call s:VimDebuggerLoad()
 
 function s:VimDebuggerInit()
 
@@ -74,6 +73,8 @@ if has('python')
 	command! -nargs=0 -bar DbgAddWatch          call g:__dbg_addWatchEval()
 endif
 endfunction
+
+call s:VimDebuggerLoad()
 
 function! g:__dbg_WatchFoldText()
   let nucolwidth = &fdc + &number*&numberwidth
