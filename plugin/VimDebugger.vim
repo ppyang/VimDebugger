@@ -30,7 +30,7 @@
 " Authors:
 "    Richard Bateman <taxilian@gmail.com>
 "    Steve Francia <spf13-vim@spf13.com>
-
+"    Wanpeng Yang <wanpeng.yang@gmail.com>
 
 function s:VimDebuggerLoad()
   if has('python')
